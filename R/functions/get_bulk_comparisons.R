@@ -1,6 +1,6 @@
 get_bulk_comparisons = function(dataset, expr, meta) {
   # set up container
-  comparisons = list()
+  results = list()
   # handle each dataset appropriately
   if (dataset == 'Angelidis2019') {
     meta %<>% mutate(label = factor(label, levels = c("3m", "24m")))
